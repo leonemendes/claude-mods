@@ -60,7 +60,7 @@ In the desktop app, where `/plugin` does not run: click + next to the prompt box
 
 ## Status line
 
-`statusline/statusline.ts` draws the lower bar in up to three lines: the model, effort and how many sessions are running or waiting; context, session and week usage with reset times, and cost; and today's meetings with join links, from the footer file `activity-pane` writes. It keeps room for the pane's Files button and shows one line when the pane is open. It needs [bun](https://bun.sh).
+`statusline/statusline.ts` draws the lower bar in up to three lines: the model, effort and how many sessions are running (`▶`), waiting (`⏸`) or in a shell (`$`), with a count of 0 left out; context, session and week usage with reset times, and cost; and today's meetings with join links, from the footer file `activity-pane` writes. It keeps room for the pane's Files button and shows one line when the pane is open. It needs [bun](https://bun.sh).
 
 Copy the folder to your Claude config:
 
