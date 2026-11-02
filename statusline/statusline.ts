@@ -64,10 +64,9 @@ const model = [
 ];
 
 function sessionIcons(): string[] {
-  const icons = [...sessionCounts()]
+  return [...sessionCounts()]
     .filter(([, n]) => n > 0)
-    .map(([label, n]) => `${SESSION_ICON[label] ?? label}${n}`);
-  return icons.length > 0 ? [icons.join(" ")] : [];
+    .map(([label, n]) => `${SESSION_ICON[label] ?? label} ${n}`);
 }
 
 const usageParts: string[] = [];
