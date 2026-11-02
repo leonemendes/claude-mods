@@ -21,7 +21,7 @@ type Input = {
 const DIM = "\x1b[2m";
 const RESET = "\x1b[0m";
 const SEP = `${DIM} · ${RESET}`;
-const SESSION_ICON: Record<string, string> = { running: "●", waiting: "○", shell: "❯" };
+const SESSION_ICON: Record<string, string> = { running: "▶", waiting: "⏸", shell: "$" };
 
 function color(pct: number): string {
   if (pct >= 80) return "\x1b[31m";
