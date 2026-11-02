@@ -365,3 +365,20 @@ test('opening Files tells the status line to shrink, and closing it tells it to 
   expect(writes.at(-1)?.data.buttonWidth).toBe('Files ›'.length)
   await footer.unmount()
 })
+
+test('the mode row drops the shortcut hint so the footer buttons keep their row', async ($, on) => {
+  base(on)
+  const drawn: string[] = []
+  on('ui.render', ($: any, e: any) => {
+    drawn.push(e.props.hint)
+    const { Text } = $.ui.resolve(e)
+    return <Text>{e.props.hint}</Text>
+  })
+  await $.session.start({ cwd: '/repo', surface: 'terminal', isInteractive: true })
+  const hint = (text: string) => ({ plugin: 'activity-pane', component: 'PromptHint', requestId: 'hint', surface: 'terminal', props: { isDraft: false, isWorking: false, hint: text } }) as never
+  for (const text of ['(shift+tab to cycle) · ← 6 agents', '(shift+tab to cycle)', '? for shortcuts']) {
+    const ui = await $.ui.mount(hint(text))
+    await ui.unmount()
+  }
+  expect(drawn).toEqual(['← 6 agents', '(shift+tab to cycle)', '? for shortcuts'])
+})

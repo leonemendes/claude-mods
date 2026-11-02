@@ -140,6 +140,7 @@ async function sendRun($: EngineInterface, id: string, cmd: string): Promise<voi
 const AGENDA_REFRESH_MS = 5 * 60_000
 const TICK_MS = 60_000
 const LARGEST = { rows: 1000, columns: 1000 }
+const SHORTCUT_HINT = /^\([^)]*\)\s*(·\s*)?/
 
 async function filesLabel($: EngineInterface): Promise<string> {
   const files = new Set((await read($, edits)).map(one => one.path)).size
@@ -343,6 +344,12 @@ export const register: Register = on => {
         <Button key="open-files" plain label={label} onPress={() => togglePane($)} />
       </Box>
     )
+  })
+
+  on('ui.render', { component: 'PromptHint' }, ($, e, next) => {
+    const hint = e.props.hint.replace(SHORTCUT_HINT, '')
+
+    return e.surface === 'terminal' && hint !== '' ? next({ ...e, props: { ...e.props, hint } }) : next(e)
   })
 
   on('ui.render', { component: 'Pane', requestId: PANE }, async ($, e) => {
