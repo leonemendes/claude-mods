@@ -1,0 +1,8 @@
+{
+  "name": "claude-mods",
+  "owner": { "name": "Leone Almendro Mendes" },
+  "plugins": [
+    { "name": "activity-pane", "source": "./activity-pane" },
+    { "name": "job-tags", "source": "./job-tags" }
+  ]
+}

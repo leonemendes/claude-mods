@@ -1,0 +1,6 @@
+{
+  "name": "job-tags",
+  "version": "0.1.0",
+  "description": "Prefixes each background job's name with a category (code, review, data, meeting, research, general) picked from its first prompt, again after /clear, and renames the job from the first prompt after /clear",
+  "types": "./types/index.d.ts"
+}

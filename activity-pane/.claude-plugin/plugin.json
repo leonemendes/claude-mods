@@ -1,0 +1,6 @@
+{
+  "name": "activity-pane",
+  "version": "0.4.0",
+  "description": "Terminal-only: Files pane with diffs and session PRs, a footer file the status line reads (Files count, today's meetings), and Run (or Run and send the output to Claude), Mermaid, table and copy helpers in replies",
+  "types": "./types/index.d.ts"
+}
