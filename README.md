@@ -4,7 +4,7 @@ Mods for Claude Code in the terminal.
 
 | Mod | What it does |
 | --- | --- |
-| `activity-pane` | A Files pane with the diffs and PRs of the session. In replies: `▶ Run` under each bash block, `▶ Run → Claude` to run it and send the output to the model, `↑ Send to Claude` after a plain run, Mermaid drawn as ASCII, tables redrawn to fit, and copy buttons. A footer file for the status line with today's meetings (Google Calendar connector). |
+| `activity-pane` | A Files pane with the diffs and PRs of the session. In replies: `▶ Run` under each bash block, `▶ Run → Claude` to run it and send the output to the model, `↑ Send to Claude` after a plain run, Mermaid drawn as ASCII, tables redrawn to fit, and copy buttons. A footer file for the status line with today's meetings (Google Calendar connector). The mode row drops its `(shift+tab to cycle)` hint while other pills show, so the Files button keeps its place beside the first status line. |
 | `statusline` | A status line script for the lower bar, see [Status line](#status-line). |
 | `job-tags` | Puts a category (code, review, data, meeting, research, general) before each background job's name, from its first prompt, and names the job again after `/clear`. |
 
