@@ -21,6 +21,7 @@ type Input = {
 const DIM = "\x1b[2m";
 const RESET = "\x1b[0m";
 const SEP = `${DIM} · ${RESET}`;
+const SESSION_ICON: Record<string, string> = { running: "●", waiting: "○", shell: "❯" };
 
 function color(pct: number): string {
   if (pct >= 80) return "\x1b[31m";
@@ -59,8 +60,15 @@ const footer = readFooter("activity-footer", input.session_id);
 const model = [
   `\x1b[1m${input.model?.display_name ?? "?"}\x1b[0m`,
   input.effort?.level ?? `${DIM}no effort${RESET}`,
-  ...[...sessionCounts()].map(([label, n]) => `${n} ${label}`),
+  ...sessionIcons(),
 ];
+
+function sessionIcons(): string[] {
+  const icons = [...sessionCounts()]
+    .filter(([, n]) => n > 0)
+    .map(([label, n]) => `${SESSION_ICON[label] ?? label}${n}`);
+  return icons.length > 0 ? [icons.join(" ")] : [];
+}
 
 const usageParts: string[] = [];
 const ctx = input.context_window?.used_percentage;
