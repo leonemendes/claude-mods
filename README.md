@@ -8,6 +8,32 @@ Mods for Claude Code in the terminal.
 | `statusline` | A status line script for the lower bar, see [Status line](#status-line). |
 | `job-tags` | Puts a category (code, review, data, meeting, research, general) before each background job's name, from its first prompt, and names the job again after `/clear`. |
 
+## Demos
+
+### activity-pane: Run → Claude
+
+`▶ Run → Claude` runs the block and sends the output to the model, which then replies to it.
+
+![activity-pane: Run → Claude runs make test, shows the failure, and Claude answers](demos/activity-pane-run.svg)
+
+### activity-pane: Files pane
+
+The `Files 3 · PRs 1 ›` button at the end of the mode line opens the pane: the PRs of the session, the files changed, and a diff for each.
+
+![activity-pane: the Files button opens a pane with PRs and files, then a file's diff](demos/activity-pane-files.svg)
+
+### statusline
+
+Model, effort and sessions; usage with reset times and cost; today's meetings as links. Drawn by `statusline/statusline.ts` from sample data.
+
+![statusline: three lines under the prompt with the Files button on the right](demos/statusline.svg)
+
+### job-tags
+
+![job-tags: a background job gets a category before its name, and a new one after /clear](demos/job-tags.svg)
+
+The demos are drawn from sample data by `bun demos/build.ts`.
+
 ## Install
 
 At the prompt of a terminal session:

@@ -1,0 +1,112 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="805" height="436" viewBox="0 0 805 436" role="img" aria-label="activity-pane · Run → Claude">
+<title>activity-pane · Run → Claude</title>
+<style>text{font-family:ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace;font-size:14px;white-space:pre}@keyframes f0{0.000%,20.224%{opacity:1}20.225%,100%{opacity:0}}.f0{opacity:0;animation:f0 8900ms step-end infinite}@keyframes f1{0%,20.224%{opacity:0}20.225%,28.089%{opacity:1}28.090%,100%{opacity:0}}.f1{opacity:0;animation:f1 8900ms step-end infinite}@keyframes f2{0%,28.089%{opacity:0}28.090%,39.325%{opacity:1}39.326%,100%{opacity:0}}.f2{opacity:0;animation:f2 8900ms step-end infinite}@keyframes f3{0%,39.325%{opacity:0}39.326%,52.808%{opacity:1}52.809%,100%{opacity:0}}.f3{opacity:0;animation:f3 8900ms step-end infinite}@keyframes f4{0%,52.808%{opacity:0}52.809%,99.999%{opacity:1}}.f4{opacity:1;animation:f4 8900ms step-end infinite}</style>
+<rect width="805" height="436" rx="10" fill="#1e1e2e"/>
+<rect width="805" height="30" rx="10" fill="#181825"/><rect y="20" width="805" height="10" fill="#181825"/>
+<circle cx="20" cy="15" r="5.5" fill="#f38ba8"/><circle cx="38" cy="15" r="5.5" fill="#f9e2af"/><circle cx="56" cy="15" r="5.5" fill="#a6e3a1"/><text x="402.5" y="20" fill="#7f849c" text-anchor="middle" style="font-size:12px">activity-pane · Run → Claude</text>
+<g class="f0">
+<text x="16" y="54" fill="#7f849c" textLength="16.8" lengthAdjust="spacingAndGlyphs">&gt; </text><text x="32.8" y="54" fill="#7f849c" textLength="352.8" lengthAdjust="spacingAndGlyphs">why does the auth test fail on my machine?</text>
+
+<text x="16" y="94" fill="#d97757" textLength="16.8" lengthAdjust="spacingAndGlyphs">● </text><text x="32.8" y="94" fill="#cdd6f4" textLength="369.6" lengthAdjust="spacingAndGlyphs">Run the suite and look at the first failure:</text>
+
+<text x="32.8" y="134" fill="#b4befe" textLength="75.6" lengthAdjust="spacingAndGlyphs">make test</text>
+
+<text x="32.8" y="174" fill="#89b4fa" textLength="42.0" lengthAdjust="spacingAndGlyphs">▶ Run</text><text x="100" y="174" fill="#89b4fa" textLength="117.6" lengthAdjust="spacingAndGlyphs">▶ Run → Claude</text><text x="242.8" y="174" fill="#89b4fa" textLength="50.4" lengthAdjust="spacingAndGlyphs">⧉ Copy</text>
+
+
+
+
+
+
+
+
+
+<text x="16" y="374" fill="#585b70" textLength="772.8" lengthAdjust="spacingAndGlyphs">╭──────────────────────────────────────────────────────────────────────────────────────────╮</text>
+<text x="16" y="394" fill="#585b70" textLength="8.4" lengthAdjust="spacingAndGlyphs">│</text><text x="24.4" y="394" fill="#7f849c" textLength="25.2" lengthAdjust="spacingAndGlyphs"> &gt; </text><text x="780.4" y="394" fill="#585b70" textLength="8.4" lengthAdjust="spacingAndGlyphs">│</text>
+<text x="16" y="414" fill="#585b70" textLength="772.8" lengthAdjust="spacingAndGlyphs">╰──────────────────────────────────────────────────────────────────────────────────────────╯</text>
+</g>
+<g class="f1">
+<text x="16" y="54" fill="#7f849c" textLength="16.8" lengthAdjust="spacingAndGlyphs">&gt; </text><text x="32.8" y="54" fill="#7f849c" textLength="352.8" lengthAdjust="spacingAndGlyphs">why does the auth test fail on my machine?</text>
+
+<text x="16" y="94" fill="#d97757" textLength="16.8" lengthAdjust="spacingAndGlyphs">● </text><text x="32.8" y="94" fill="#cdd6f4" textLength="369.6" lengthAdjust="spacingAndGlyphs">Run the suite and look at the first failure:</text>
+
+<text x="32.8" y="134" fill="#b4befe" textLength="75.6" lengthAdjust="spacingAndGlyphs">make test</text>
+
+<text x="32.8" y="174" fill="#89b4fa" textLength="42.0" lengthAdjust="spacingAndGlyphs">▶ Run</text><rect x="98" y="159" width="121.60000000000001" height="20" rx="3" fill="#45475a"/><text x="100" y="174" fill="#cdd6f4" textLength="117.6" lengthAdjust="spacingAndGlyphs" font-weight="700">▶ Run → Claude</text><text x="242.8" y="174" fill="#89b4fa" textLength="50.4" lengthAdjust="spacingAndGlyphs">⧉ Copy</text>
+
+
+
+
+
+
+
+
+
+<text x="16" y="374" fill="#585b70" textLength="772.8" lengthAdjust="spacingAndGlyphs">╭──────────────────────────────────────────────────────────────────────────────────────────╮</text>
+<text x="16" y="394" fill="#585b70" textLength="8.4" lengthAdjust="spacingAndGlyphs">│</text><text x="24.4" y="394" fill="#7f849c" textLength="25.2" lengthAdjust="spacingAndGlyphs"> &gt; </text><text x="780.4" y="394" fill="#585b70" textLength="8.4" lengthAdjust="spacingAndGlyphs">│</text>
+<text x="16" y="414" fill="#585b70" textLength="772.8" lengthAdjust="spacingAndGlyphs">╰──────────────────────────────────────────────────────────────────────────────────────────╯</text>
+</g>
+<g class="f2">
+<text x="16" y="54" fill="#7f849c" textLength="16.8" lengthAdjust="spacingAndGlyphs">&gt; </text><text x="32.8" y="54" fill="#7f849c" textLength="352.8" lengthAdjust="spacingAndGlyphs">why does the auth test fail on my machine?</text>
+
+<text x="16" y="94" fill="#d97757" textLength="16.8" lengthAdjust="spacingAndGlyphs">● </text><text x="32.8" y="94" fill="#cdd6f4" textLength="369.6" lengthAdjust="spacingAndGlyphs">Run the suite and look at the first failure:</text>
+
+<text x="32.8" y="134" fill="#b4befe" textLength="75.6" lengthAdjust="spacingAndGlyphs">make test</text>
+
+<text x="32.8" y="174" fill="#89b4fa" textLength="92.4" lengthAdjust="spacingAndGlyphs">… Run again</text><text x="150.4" y="174" fill="#89b4fa" textLength="50.4" lengthAdjust="spacingAndGlyphs">⧉ Copy</text>
+<text x="32.8" y="194" fill="#7f849c" textLength="67.2" lengthAdjust="spacingAndGlyphs">running…</text>
+
+
+
+
+
+
+
+
+<text x="16" y="374" fill="#585b70" textLength="772.8" lengthAdjust="spacingAndGlyphs">╭──────────────────────────────────────────────────────────────────────────────────────────╮</text>
+<text x="16" y="394" fill="#585b70" textLength="8.4" lengthAdjust="spacingAndGlyphs">│</text><text x="24.4" y="394" fill="#7f849c" textLength="25.2" lengthAdjust="spacingAndGlyphs"> &gt; </text><text x="780.4" y="394" fill="#585b70" textLength="8.4" lengthAdjust="spacingAndGlyphs">│</text>
+<text x="16" y="414" fill="#585b70" textLength="772.8" lengthAdjust="spacingAndGlyphs">╰──────────────────────────────────────────────────────────────────────────────────────────╯</text>
+</g>
+<g class="f3">
+<text x="16" y="54" fill="#7f849c" textLength="16.8" lengthAdjust="spacingAndGlyphs">&gt; </text><text x="32.8" y="54" fill="#7f849c" textLength="352.8" lengthAdjust="spacingAndGlyphs">why does the auth test fail on my machine?</text>
+
+<text x="16" y="94" fill="#d97757" textLength="16.8" lengthAdjust="spacingAndGlyphs">● </text><text x="32.8" y="94" fill="#cdd6f4" textLength="369.6" lengthAdjust="spacingAndGlyphs">Run the suite and look at the first failure:</text>
+
+<text x="32.8" y="134" fill="#b4befe" textLength="75.6" lengthAdjust="spacingAndGlyphs">make test</text>
+
+<text x="32.8" y="174" fill="#89b4fa" textLength="92.4" lengthAdjust="spacingAndGlyphs">✗ Run again</text><text x="150.4" y="174" fill="#a6e3a1" textLength="134.4" lengthAdjust="spacingAndGlyphs">✓ Sent to Claude</text><text x="310" y="174" fill="#89b4fa" textLength="50.4" lengthAdjust="spacingAndGlyphs">⧉ Copy</text>
+<text x="32.8" y="194" fill="#f38ba8" textLength="411.6" lengthAdjust="spacingAndGlyphs">FAIL src/auth.test.ts &gt; signs in with a saved key</text>
+<text x="32.8" y="214" fill="#f38ba8" textLength="235.2" lengthAdjust="spacingAndGlyphs">  expected 200, received 401</text>
+<text x="32.8" y="234" fill="#f38ba8" textLength="226.8" lengthAdjust="spacingAndGlyphs">Tests  1 failed | 23 passed</text>
+
+
+
+
+
+
+<text x="16" y="374" fill="#585b70" textLength="772.8" lengthAdjust="spacingAndGlyphs">╭──────────────────────────────────────────────────────────────────────────────────────────╮</text>
+<text x="16" y="394" fill="#585b70" textLength="8.4" lengthAdjust="spacingAndGlyphs">│</text><text x="24.4" y="394" fill="#7f849c" textLength="25.2" lengthAdjust="spacingAndGlyphs"> &gt; </text><text x="780.4" y="394" fill="#585b70" textLength="8.4" lengthAdjust="spacingAndGlyphs">│</text>
+<text x="16" y="414" fill="#585b70" textLength="772.8" lengthAdjust="spacingAndGlyphs">╰──────────────────────────────────────────────────────────────────────────────────────────╯</text>
+</g>
+<g class="f4">
+<text x="16" y="54" fill="#7f849c" textLength="16.8" lengthAdjust="spacingAndGlyphs">&gt; </text><text x="32.8" y="54" fill="#7f849c" textLength="352.8" lengthAdjust="spacingAndGlyphs">why does the auth test fail on my machine?</text>
+
+<text x="16" y="94" fill="#d97757" textLength="16.8" lengthAdjust="spacingAndGlyphs">● </text><text x="32.8" y="94" fill="#cdd6f4" textLength="369.6" lengthAdjust="spacingAndGlyphs">Run the suite and look at the first failure:</text>
+
+<text x="32.8" y="134" fill="#b4befe" textLength="75.6" lengthAdjust="spacingAndGlyphs">make test</text>
+
+<text x="32.8" y="174" fill="#89b4fa" textLength="92.4" lengthAdjust="spacingAndGlyphs">✗ Run again</text><text x="150.4" y="174" fill="#a6e3a1" textLength="134.4" lengthAdjust="spacingAndGlyphs">✓ Sent to Claude</text><text x="310" y="174" fill="#89b4fa" textLength="50.4" lengthAdjust="spacingAndGlyphs">⧉ Copy</text>
+<text x="32.8" y="194" fill="#f38ba8" textLength="411.6" lengthAdjust="spacingAndGlyphs">FAIL src/auth.test.ts &gt; signs in with a saved key</text>
+<text x="32.8" y="214" fill="#f38ba8" textLength="235.2" lengthAdjust="spacingAndGlyphs">  expected 200, received 401</text>
+<text x="32.8" y="234" fill="#f38ba8" textLength="226.8" lengthAdjust="spacingAndGlyphs">Tests  1 failed | 23 passed</text>
+
+<text x="16" y="274" fill="#7f849c" textLength="16.8" lengthAdjust="spacingAndGlyphs">&gt; </text><text x="32.8" y="274" fill="#d97757" textLength="126.0" lengthAdjust="spacingAndGlyphs">activity-pane: </text><text x="158.8" y="274" fill="#7f849c" textLength="369.6" lengthAdjust="spacingAndGlyphs">I ran this command from your reply (exit 2):</text>
+<text x="16" y="294" fill="#7f849c" textLength="260.4" lengthAdjust="spacingAndGlyphs">  make test · 3 lines of output</text>
+
+<text x="16" y="334" fill="#d97757" textLength="16.8" lengthAdjust="spacingAndGlyphs">● </text><text x="32.8" y="334" fill="#cdd6f4" textLength="588.0" lengthAdjust="spacingAndGlyphs">The key in .env.test expired, so sign-in returns 401. I will point the</text>
+<text x="32.8" y="354" fill="#cdd6f4" textLength="268.8" lengthAdjust="spacingAndGlyphs">test at the fixture key instead.</text>
+<text x="16" y="374" fill="#585b70" textLength="772.8" lengthAdjust="spacingAndGlyphs">╭──────────────────────────────────────────────────────────────────────────────────────────╮</text>
+<text x="16" y="394" fill="#585b70" textLength="8.4" lengthAdjust="spacingAndGlyphs">│</text><text x="24.4" y="394" fill="#7f849c" textLength="25.2" lengthAdjust="spacingAndGlyphs"> &gt; </text><text x="780.4" y="394" fill="#585b70" textLength="8.4" lengthAdjust="spacingAndGlyphs">│</text>
+<text x="16" y="414" fill="#585b70" textLength="772.8" lengthAdjust="spacingAndGlyphs">╰──────────────────────────────────────────────────────────────────────────────────────────╯</text>
+</g>
+</svg>
