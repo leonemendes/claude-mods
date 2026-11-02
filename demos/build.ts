@@ -160,7 +160,7 @@ function pad(line: Line, cols: number, right: Line): Line {
   return [...line, s(" ".repeat(Math.max(1, cols - used - rightWidth))), ...right];
 }
 
-async function statusLines(cols: number): Promise<Line[]> {
+async function statusLines(cols: number, buttonWidth: number): Promise<Line[]> {
   const home = mkdtempSync(join(tmpdir(), "statusline-demo-"));
   const sessionId = "demo-session";
   const now = Date.now();
@@ -171,6 +171,7 @@ async function statusLines(cols: number): Promise<Line[]> {
       { text: `${hhmm(120)} Team sync`, url: "https://example.com/meet/b" },
       { text: `${hhmm(240)} 1:1`, url: null },
     ],
+    buttonWidth,
     isCompact: false,
     at: now,
   };
@@ -319,16 +320,17 @@ function filesDemo(): Demo {
 async function statuslineDemo(): Promise<Demo> {
   const cols = 80;
   const label = "Files 3 · PRs 1 ›";
-  const lines = (await statusLines(cols)).map(line => [s("  "), ...line]);
-  const mode = pad(L(s("⏵⏵ auto mode on", { c: C.accent })), cols, [s(label)]);
+  const [first = blank, ...rest] = (await statusLines(cols, label.length)).map(line => [s("  "), ...line]);
+  const mode = L(s("  "), s("⏵⏵ auto mode on", { c: C.accent }));
   const chat: Line[] = [claude("Done. The tests pass and the PR is up."), blank];
+  const lines = [pad(first, cols, [s(label)]), ...rest, mode];
 
   return {
     name: "statusline",
     title: "statusline · the lower bar",
     cols,
-    rows: chat.length + 3 + lines.length + 1,
-    frames: [{ lines: [...chat, ...promptBox(cols), ...lines, mode], ms: 1000 }],
+    rows: chat.length + 3 + lines.length,
+    frames: [{ lines: [...chat, ...promptBox(cols), ...lines], ms: 1000 }],
   };
 }
 
