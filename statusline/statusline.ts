@@ -109,7 +109,7 @@ function fit(line: string, max: number): string {
 }
 
 const RIGHT_GAP = 2;
-const room = Number(process.env.COLUMNS) - 4 - (footer.buttonWidth ?? 0) - RIGHT_GAP;
+const room = Number(process.env.COLUMNS) - 4 - RIGHT_GAP;
 const shown = footer.isCompact ? lines.slice(0, 1) : lines;
 
 console.log((room > 10 ? shown.map(line => fit(line, room)) : shown).join("\n"));

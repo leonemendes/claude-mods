@@ -26,7 +26,7 @@ The `Files 3 · PRs 1 ›` button at the end of the mode line opens the pane: th
 
 Model, effort and sessions; usage with reset times and cost; today's meetings as links. Drawn by `statusline/statusline.ts` from sample data.
 
-![statusline: three lines under the prompt with the Files button on the right](demos/statusline.svg)
+![statusline: three lines under the prompt, then the mode line with the Files button on the right](demos/statusline.svg)
 
 ### job-tags
 
@@ -60,7 +60,7 @@ In the desktop app, where `/plugin` does not run: click + next to the prompt box
 
 ## Status line
 
-`statusline/statusline.ts` draws the lower bar in up to three lines: the model, effort and how many sessions are running (`▶`), waiting (`⏸`) or in a shell (`$`), with a count of 0 left out; context, session and week usage with reset times, and cost; and today's meetings with join links, from the footer file `activity-pane` writes. It keeps room for the pane's Files button and shows one line when the pane is open. It needs [bun](https://bun.sh).
+`statusline/statusline.ts` draws the lower bar in up to three lines: the model, effort and how many sessions are running (`▶`), waiting (`⏸`) or in a shell (`$`), with a count of 0 left out; context, session and week usage with reset times, and cost; and today's meetings with join links, from the footer file `activity-pane` writes. Each line is cut to the width Claude Code gives the status line, and it shows one line when the Files pane is open. It needs [bun](https://bun.sh).
 
 Copy the folder to your Claude config:
 
