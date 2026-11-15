@@ -37,10 +37,10 @@ function resetLabel(epochSeconds: number | undefined, withDay: boolean): string 
   return `${DIM} ↻${withDay ? `${day} ` : ""}${time}${RESET}`;
 }
 
-function usage(label: string, w: Window | undefined, withDay: boolean, withReset: boolean): string {
+function usage(label: string, w: Window | undefined, withDay: boolean): string {
   if (w?.used_percentage == null) return `${label} ${DIM}–${RESET}`;
   const pct = Math.round(w.used_percentage);
-  return `${label} ${color(pct)}${pct}%${RESET}${withReset ? resetLabel(w.resets_at, withDay) : ""}`;
+  return `${label} ${color(pct)}${pct}%${RESET}${resetLabel(w.resets_at, withDay)}`;
 }
 
 const FOOTER_MAX_AGE_MS = 15 * 60_000;
@@ -80,12 +80,12 @@ function sessionIcons(): string[] {
     .map(([label, n]) => `${SESSION_ICON[label] ?? label} ${n}`);
 }
 
-function usageLine(withResets: boolean): string {
+function usageLine(): string {
   const parts: string[] = [];
   const ctx = input.context_window?.used_percentage;
   if (ctx != null) parts.push(`ctx ${color(ctx)}${Math.round(ctx)}%${RESET}`);
-  parts.push(usage("session", input.rate_limits?.five_hour, false, withResets));
-  parts.push(usage("week", input.rate_limits?.seven_day, true, withResets));
+  parts.push(usage("session", input.rate_limits?.five_hour, false));
+  parts.push(usage("week", input.rate_limits?.seven_day, true));
   if (input.cost?.total_cost_usd != null) parts.push(`$${input.cost.total_cost_usd.toFixed(2)}`);
   return parts.join(SEP);
 }
@@ -140,8 +140,7 @@ const right = buttons.reduce((sum, one) => sum + (one.buttonWidth ?? 0), 0);
 const columns = Number(process.env.COLUMNS);
 const room = Number.isFinite(columns) && columns > 0 ? columns - 4 - right - RIGHT_GAP : Infinity;
 
-const full = usageLine(true);
-const lines = [model.join(SEP), width(full) <= room ? full : usageLine(false)];
+const lines = [model.join(SEP), usageLine()];
 if (Array.isArray(footer.calendar) && footer.calendar.length > 0) lines.push(calendarLine(footer.calendar, room));
 const shown = buttons.some(one => one.isCompact) ? lines.slice(0, 1) : lines;
 
