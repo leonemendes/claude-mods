@@ -60,7 +60,7 @@ In the desktop app, where `/plugin` does not run: click + next to the prompt box
 
 ## Status line
 
-`statusline/statusline.ts` draws the lower bar in up to three lines: the model, effort and how many sessions are running (`▶`), waiting (`⏸`) or in a shell (`$`), with a count of 0 left out; context, session and week usage with reset times, and cost; and today's meetings with join links, from the footer file `activity-pane` writes. It keeps room at the right for every mod's footer button (the `buttonWidth` in each `~/.claude/cache/*-footer/<session>.json`), so the Files button stays beside the first line. A line that is too long drops the reset times first, and the meetings show whole with `+N` for the rest. It shows one line when the Files pane is open. It needs [bun](https://bun.sh).
+`statusline/statusline.ts` draws the lower bar in up to three lines: the model, effort and how many sessions are running (`▶`), waiting (`⏸`) or in a shell (`$`), with a count of 0 left out; context, session and week usage with reset times, and cost; and today's meetings with join links, from the footer file `activity-pane` writes. It keeps room at the right for every mod's footer button (the `buttonWidth` in each `~/.claude/cache/*-footer/<session>.json`), so the Files button stays beside the first line. A line that is too long is cut from the end with `…`, so the cost goes before the reset times, and the meetings show whole with `+N` for the rest. It shows one line when the Files pane is open. It needs [bun](https://bun.sh).
 
 Copy the folder to your Claude config:
 
